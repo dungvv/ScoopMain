@@ -1,14 +1,15 @@
 {
-    "version": "2020-12-07",
+    "version": "2022-04-11",
     "description": "An experimental Rust compiler front-end for IDEs",
     "homepage": "https://rust-analyzer.github.io/",
     "license": "Apache-2.0|MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2020-12-07/rust-analyzer-windows.exe#/rust-analyzer.exe",
-            "hash": "bbb71a3ee708d0db01d960cdae9164f7d45a798a3dbb90af12efe4e26b0e0f3e"
+            "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/2022-04-11/rust-analyzer-x86_64-pc-windows-msvc.gz",
+            "hash": "cd3833b06ace720ee17cbd6ffbfa0b0314f4423bc96b70f10b3c9e8135227355"
         }
     },
+    "pre_install": "Rename-Item \"$dir\\$($fname -replace '\\.gz$')\" 'rust-analyzer.exe'",
     "bin": "rust-analyzer.exe",
     "checkver": {
         "github": "https://github.com/rust-analyzer/rust-analyzer",
@@ -17,7 +18,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/$version/rust-analyzer-windows.exe#/rust-analyzer.exe"
+                "url": "https://github.com/rust-analyzer/rust-analyzer/releases/download/$version/rust-analyzer-x86_64-pc-windows-msvc.gz"
             }
         }
     }

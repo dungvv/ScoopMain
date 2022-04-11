@@ -1,18 +1,18 @@
 {
-    "version": "1.8.0",
+    "version": "1.18.6",
     "description": "The Syncthing global discovery server",
     "homepage": "https://syncthing.net/",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/syncthing/discosrv/releases/download/v1.8.0/stdiscosrv-windows-amd64-v1.8.0.zip",
-            "hash": "29512426021b466680ee69a14801778b8236c1163f6c58d153a1ce02a8b2a834",
-            "extract_dir": "stdiscosrv-windows-amd64-v1.8.0"
+            "url": "https://github.com/syncthing/discosrv/releases/download/v1.18.6/stdiscosrv-windows-amd64-v1.18.6.zip",
+            "hash": "95371b82fce767d24d2fa6675bbd3a6edebe7f1cf641ceab819f340093f69291",
+            "extract_dir": "stdiscosrv-windows-amd64-v1.18.6"
         },
         "32bit": {
-            "url": "https://github.com/syncthing/discosrv/releases/download/v1.8.0/stdiscosrv-windows-386-v1.8.0.zip",
-            "hash": "89e3b923201e301447ca1d61d8e2d54dd46d591afb3cd38246dc973001321c73",
-            "extract_dir": "stdiscosrv-windows-386-v1.8.0"
+            "url": "https://github.com/syncthing/discosrv/releases/download/v1.18.6/stdiscosrv-windows-386-v1.18.6.zip",
+            "hash": "1dd43cc771a2709ae4b6a6459b1ed5b969cdeac5f9ce32dbf3de51610c85412c",
+            "extract_dir": "stdiscosrv-windows-386-v1.18.6"
         }
     },
     "bin": [

@@ -1,17 +1,17 @@
 {
-    "homepage": "https://github.com/zquestz/s",
+    "version": "0.6.6",
     "description": "Open a web search in your terminal.",
+    "homepage": "https://github.com/zquestz/s",
     "license": "MIT",
-    "version": "0.5.14",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zquestz/s/releases/download/v0.5.14/s-windows_amd64.zip",
-            "hash": "d8da5cfbe37e87f2bb22d5bdec5b52cc7faf17eeadf2c259304a48ffd2c47cce",
+            "url": "https://github.com/zquestz/s/releases/download/v0.6.6/s-windows_amd64.zip",
+            "hash": "38ce2f517403ca4eb3b58b79624ba1d0c10779cc292ba34e22b0a2d1498b56e2",
             "extract_dir": "s-windows_amd64"
         },
         "32bit": {
-            "url": "https://github.com/zquestz/s/releases/download/v0.5.14/s-windows_386.zip",
-            "hash": "0aba3fcb13623f915683abc1ddfd06e6d4aa909a2c1997795848babde2329bc2",
+            "url": "https://github.com/zquestz/s/releases/download/v0.6.6/s-windows_386.zip",
+            "hash": "6de36c7df0e72ae0102b0476bec805221ffc041340fe833b9c9fdaaf00dde138",
             "extract_dir": "s-windows_386"
         }
     },

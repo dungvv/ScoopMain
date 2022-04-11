@@ -1,42 +1,39 @@
 {
-    "version": "1.2.3",
+    "version": "2.6.0",
     "description": "The command line client for IBM Cloud",
-    "homepage": "https://github.com/IBM-Cloud/ibm-cloud-cli-release",
+    "homepage": "https://www.ibm.com/cloud/cli",
     "license": {
-        "identifier": "Proprietary",
-        "url": "https://cloud.ibm.com/docs/overview?topic=overview-notices"
+        "identifier": "Apache-2.0",
+        "url": "https://cloud.ibm.com/media/docs/downloads/oss-licensing-info/IBMCloud-CLI-OSS-Licenses.txt"
     },
     "architecture": {
         "64bit": {
-            "url": "https://clis.cloud.ibm.com/download/bluemix-cli/1.2.3/win64/archive#/ibmcloud-cli-win64.zip",
-            "hash": "sha1:5f7e16a1150bfab596a8b6742a4219455cfb1b43"
+            "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/2.6.0/binaries/IBM_Cloud_CLI_2.6.0_windows_amd64.zip",
+            "hash": "e2f44c8d48bd56c3ee0641aab4c3325b8202116551df5f3c21e0bc94bd178b4e"
         },
         "32bit": {
-            "url": "https://clis.cloud.ibm.com/download/bluemix-cli/1.2.3/win32/archive#/ibmcloud-cli-win32.zip",
-            "hash": "sha1:17cd5ef34597c88517a0f51b1ac7d30a6f56091d"
+            "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/2.6.0/binaries/IBM_Cloud_CLI_2.6.0_windows_386.zip",
+            "hash": "9281e418f5dbd6712f7195307353515025253c59285714fde559e832c3fd68b0"
         }
     },
     "extract_dir": "IBM_Cloud_CLI",
-    "bin": [
-        "ibmcloud.exe",
-        "ibmcloud-analytics.exe"
-    ],
+    "bin": "ibmcloud.exe",
     "env_set": {
         "IBMCLOUD_HOME": "$dir\\config"
     },
     "persist": "config",
-    "checkver": "github",
+    "checkver": {
+        "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli-metadata/info.json",
+        "jsonpath": "$.latest_version"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://clis.cloud.ibm.com/download/bluemix-cli/$version/win64/archive#/ibmcloud-cli-win64.zip"
+                "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/$version/binaries/IBM_Cloud_CLI_$version_windows_amd64.zip"
             },
             "32bit": {
-                "url": "https://clis.cloud.ibm.com/download/bluemix-cli/$version/win32/archive#/ibmcloud-cli-win32.zip"
+                "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/$version/binaries/IBM_Cloud_CLI_$version_windows_386.zip"
             }
-        },
-        "hash": {
-            "url": "$url/checksum"
         }
     }
 }

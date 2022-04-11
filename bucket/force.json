@@ -1,16 +1,12 @@
 {
-    "homepage": "https://force-cli.herokuapp.com/",
+    "version": "0.33.0",
     "description": "Force.com CLI tool",
-    "version": "0.28.1",
-    "license": "Unknown",
+    "homepage": "https://force-cli.herokuapp.com/",
+    "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ForceCLI/force/releases/download/v0.28.1/force_windows_amd64.exe#/force.exe",
-            "hash": "ecc0f2cd41d829ac5a6b2f260cc430dba17be787dab25bee04173de4a4a4c28e"
-        },
-        "32bit": {
-            "url": "https://github.com/ForceCLI/force/releases/download/v0.28.1/force_windows_386.exe#/force.exe",
-            "hash": "5a2b0248ccc9f07feaf5a066be262d420d42daf371de8995d3027ca7f3779a7a"
+            "url": "https://github.com/ForceCLI/force/releases/download/v0.33.0/force_windows_amd64.zip",
+            "hash": "e1b971877cf08d8c99bfc3cccb4daa64f4f3a113cbb3bfe90fb6edc95ad2e56b"
         }
     },
     "bin": "force.exe",
@@ -20,10 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ForceCLI/force/releases/download/v$version/force_windows_amd64.exe#/force.exe"
-            },
-            "32bit": {
-                "url": "https://github.com/ForceCLI/force/releases/download/v$version/force_windows_386.exe#/force.exe"
+                "url": "https://github.com/ForceCLI/force/releases/download/v$version/force_windows_amd64.zip"
             }
         }
     }

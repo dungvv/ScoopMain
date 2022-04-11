@@ -1,0 +1,24 @@
+{
+    "version": "11.6.6",
+    "description": "Allows you to create, manage, and distribute Python-based self-contained automation packages.",
+    "homepage": "https://robocorp.com/docs/rcc/overview",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.robocorp.com/rcc/releases/v11.6.6/windows64/rcc.exe",
+            "hash": "7bc94c7dc3b019028a05b1062f7e4778cf43a48ce17f3277f64200248e86db0d"
+        }
+    },
+    "bin": "rcc.exe",
+    "checkver": {
+        "url": "https://downloads.robocorp.com/rcc/releases/index.html",
+        "regex": "v([\\d.]+)/windows64/rcc\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.robocorp.com/rcc/releases/v$version/windows64/rcc.exe"
+            }
+        }
+    }
+}

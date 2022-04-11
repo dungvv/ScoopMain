@@ -1,19 +1,16 @@
 {
-    "version": "2020.11.11",
-    "description": "Command-line client to interact with Cloudflare's Argo Tunnel, Cloudflare Access, start up a DNS over HTTPS resolver and more.",
+    "version": "2022.4.0",
+    "description": "Command-line client to interact with Cloudflare Tunnel, Cloudflare Access, start up a DNS over HTTPS resolver and more.",
     "homepage": "https://github.com/cloudflare/cloudflared",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://github.com/cloudflare/cloudflared/blob/master/LICENSE"
-    },
+    "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cloudflare/cloudflared/releases/download/2020.11.11/cloudflared-windows-amd64.exe#/cloudflared.exe",
-            "hash": "879532f3e2a18acc692c37013c6f3b8c0bd862ada8f816c1bbcb23ad794d71b6"
+            "url": "https://github.com/cloudflare/cloudflared/releases/download/2022.4.0/cloudflared-windows-amd64.exe#/cloudflared.exe",
+            "hash": "122a97275c9018da9f698ed8fd0916ddca004ce45a48fb71dd40433b2564f4a4"
         },
         "32bit": {
-            "url": "https://github.com/cloudflare/cloudflared/releases/download/2020.11.11/cloudflared-windows-386.exe#/cloudflared.exe",
-            "hash": "03044bf44ac446fcf894751810e1131c357b93efa582686cf5f4005acaa5fb70"
+            "url": "https://github.com/cloudflare/cloudflared/releases/download/2022.4.0/cloudflared-windows-386.exe#/cloudflared.exe",
+            "hash": "bbe15aed8c974b90d420bb57d8ae5dd5b8c16f3699292691cdd1b147b3678957"
         }
     },
     "bin": "cloudflared.exe",

@@ -1,30 +1,30 @@
 {
-    "version": "3.150.1",
-    "homepage": "https://selenium.dev",
+    "version": "4.0.0",
     "description": "Selenium WebDriver for Internet Explorer 11",
+    "homepage": "https://selenium.dev",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://selenium-release.storage.googleapis.com/3.150/IEDriverServer_x64_3.150.1.zip",
-            "hash": "b4c2ae00c6536258db7aaec989f37c7900467ec5369c7352ae897017bfd51d16"
+            "url": "https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.0.0/IEDriverServer_x64_4.0.0.zip",
+            "hash": "5f98213638c84b268b23650a94aa8702dfaaa328fbf89171c2e33afccdd3436a"
         },
         "32bit": {
-            "url": "https://selenium-release.storage.googleapis.com/3.150/IEDriverServer_Win32_3.150.1.zip",
-            "hash": "09263561924a5a222b39bd0a80ef3778b8bf45457e1cf91c79b6a9f65d6230aa"
+            "url": "https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.0.0/IEDriverServer_Win32_4.0.0.zip",
+            "hash": "1e5769b2f60435b69c79b33cd234f64d0e47f7c8974925bd1cdda32ea41f2f47"
         }
     },
     "bin": "IEDriverServer.exe",
     "checkver": {
         "url": "https://selenium.dev/downloads/",
-        "regex": "(?sm)Download version ([\\d.]+).*?32 bit Windows IE"
+        "regex": "IEDriverServer_x64_([\\d.]+)\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://selenium-release.storage.googleapis.com/$majorVersion.$minorVersion/IEDriverServer_x64_$version.zip"
+                "url": "https://github.com/SeleniumHQ/selenium/releases/download/selenium-$version/IEDriverServer_x64_$version.zip"
             },
             "32bit": {
-                "url": "https://selenium-release.storage.googleapis.com/$majorVersion.$minorVersion/IEDriverServer_Win32_$version.zip"
+                "url": "https://github.com/SeleniumHQ/selenium/releases/download/selenium-$version/IEDriverServer_Win32_$version.zip"
             }
         }
     }

@@ -1,22 +1,22 @@
 {
+    "version": "5.3.101",
+    "description": "NoSQL database built on .NET Core",
     "homepage": "https://ravendb.net",
-    "description": "NoSQL database built on .NET Core.",
-    "version": "5.1.2",
     "license": {
         "identifier": "Freeware",
         "url": "https://ravendb.net/terms/commercial"
     },
     "suggest": {
-        "Visual C++ Redistributable 2015": "extras/vcredist2015"
+        "Visual C++ Redistributable 2015": "extras/vcredist2022"
     },
     "architecture": {
-        "32bit": {
-            "url": "https://daily-builds.s3.amazonaws.com/RavenDB-5.1.2-windows-x86.zip",
-            "hash": "4f3fd6d42fb45458ec24c5cefab2a16527cf3c5aa2a9bb69946b98a10804d92a"
-        },
         "64bit": {
-            "url": "https://daily-builds.s3.amazonaws.com/RavenDB-5.1.2-windows-x64.zip",
-            "hash": "e13c11f0aefb677b7f3586b7eb733f23f06b8bae625227bc3a06b54e4ce7365e"
+            "url": "https://daily-builds.s3.amazonaws.com/RavenDB-5.3.101-windows-x64.zip",
+            "hash": "0bd6a8713b849e1cfa81a4ea70b42c0f7b6026aa0e5f14ba3d35b468064085e2"
+        },
+        "32bit": {
+            "url": "https://daily-builds.s3.amazonaws.com/RavenDB-5.3.101-windows-x86.zip",
+            "hash": "7b825e716d36dca1615774bc84eb8b292cd19b1af5068318aab54cb2348824f4"
         }
     },
     "installer": {
@@ -45,16 +45,16 @@
     ],
     "persist": "Server\\settings.json",
     "checkver": {
-        "url": "https://ravendb.net/download",
-        "regex": "Latest STABLE <span class=\"text-primary\">([\\d.]+)</span></h1>"
+        "url": "https://ravendb.net/whats-new",
+        "regex": "([\\d.]+)\\s*\\(\\d+"
     },
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "https://daily-builds.s3.amazonaws.com/RavenDB-$version-windows-x86.zip"
-            },
             "64bit": {
                 "url": "https://daily-builds.s3.amazonaws.com/RavenDB-$version-windows-x64.zip"
+            },
+            "32bit": {
+                "url": "https://daily-builds.s3.amazonaws.com/RavenDB-$version-windows-x86.zip"
             }
         }
     }

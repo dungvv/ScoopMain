@@ -1,22 +1,22 @@
 {
-    "homepage": "https://www.packer.io",
+    "version": "1.8.0",
     "description": "Automates the creation of any type of virtual machine image.",
+    "homepage": "https://www.packer.io",
     "license": "MPL-2.0",
-    "version": "1.6.5",
     "architecture": {
         "64bit": {
-            "url": "https://releases.hashicorp.com/packer/1.6.5/packer_1.6.5_windows_amd64.zip",
-            "hash": "ff64180c8ebba2f9fe08fa6ae3dbe8282067ff1174b77edee7b1d9ac676d1383"
+            "url": "https://releases.hashicorp.com/packer/1.8.0/packer_1.8.0_windows_amd64.zip",
+            "hash": "6c1b00069e4924e97b362b6c72a7315960487aaeb287bfdec717468ca2b50e9a"
         },
         "32bit": {
-            "url": "https://releases.hashicorp.com/packer/1.6.5/packer_1.6.5_windows_386.zip",
-            "hash": "75cf9bb564bf2865a72a6aa9bec5e0a6d69cfa119be8b297e9be26fb7e3000fd"
+            "url": "https://releases.hashicorp.com/packer/1.8.0/packer_1.8.0_windows_386.zip",
+            "hash": "e83a08370d73b2b56c91f58adbe7e86c178c011bdd6da07ec90f8c07e119df18"
         }
     },
     "bin": "packer.exe",
     "checkver": {
         "url": "https://releases.hashicorp.com/packer/",
-        "re": "packer_([\\d.]+)</a>"
+        "regex": "packer_([\\d.]+)</a>"
     },
     "autoupdate": {
         "architecture": {

@@ -1,19 +1,19 @@
 {
-    "version": "0.3.3",
+    "version": "0.3.6",
     "description": "Improved Tree command",
     "homepage": "https://github.com/dduan/tre",
     "license": "MIT",
     "suggest": {
-        "vcredist": "extras/vcredist2015"
+        "vcredist": "extras/vcredist2022"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dduan/tre/releases/download/v0.3.3/tre-v0.3.3-x86_64-pc-windows-msvc.zip",
-            "hash": "14003404f94da3bd9b5a42e7ce065258e67ba983e238ab781f3cd5a2d541fcfb"
+            "url": "https://github.com/dduan/tre/releases/download/v0.3.6/tre-v0.3.6-x86_64-pc-windows-msvc.zip",
+            "hash": "739a89c01207c3d4f23c4c6b42019d0cb3da4506b7255045b59cc262d5c82808"
         },
         "32bit": {
-            "url": "https://github.com/dduan/tre/releases/download/v0.3.3/tre-v0.3.3-i686-pc-windows-msvc.zip",
-            "hash": "1da924695fddfdba70f948e2d2103e9c9ffd649a6ddec4a88c7068f056c1ad36"
+            "url": "https://github.com/dduan/tre/releases/download/v0.3.6/tre-v0.3.6-i686-pc-windows-msvc.zip",
+            "hash": "93c78a722299b7e20ebd379caba6a34d560b5fbf2cefee962bc2f55d31e1dd09"
         }
     },
     "bin": "tre.exe",

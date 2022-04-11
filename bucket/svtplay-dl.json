@@ -1,5 +1,5 @@
 {
-    "version": "2.8",
+    "version": "4.11",
     "description": "Video downloader from various sites",
     "homepage": "https://svtplay-dl.se",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://svtplay-dl.se/download/2.8/svtplay-dl-amd64.zip",
-            "hash": "fae340c9a50011821ef423e8de070184a7ce0478f2abe4e19ce3f5070e55ae35"
+            "url": "https://svtplay-dl.se/download/4.11/svtplay-dl-amd64.zip",
+            "hash": "d2beb0168fa14666e2d4cfed5c059e04873704111118b54921366b99a5ce51cc"
         },
         "32bit": {
-            "url": "https://svtplay-dl.se/download/2.8/svtplay-dl-win32.zip",
-            "hash": "80d0bde1f5cb0509a56215d54fffd013dc9051607e251feee54d90b4cd95ced8"
+            "url": "https://svtplay-dl.se/download/4.11/svtplay-dl-win32.zip",
+            "hash": "865945041333eb34b38dd1ce439af284657c5b62a4be3f7430a36e78f553045e"
         }
     },
     "extract_dir": "svtplay-dl",

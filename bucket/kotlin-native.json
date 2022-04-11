@@ -1,12 +1,19 @@
 {
-    "version": "1.4.21",
+    "version": "1.6.20",
     "description": "An LLVM backend for the Kotlin compiler, runtime implementation, and native code generation facility using the LLVM toolchain for native binaries runnable without a virtual machine.",
-    "homepage": "https://kotlinlang.org/",
+    "homepage": "https://kotlinlang.org",
     "license": "Apache-2.0",
     "notes": "Please keep in mind that this is still marked as an experimental feature!",
-    "url": "https://github.com/JetBrains/kotlin/releases/download/v1.4.21/kotlin-native-windows-1.4.21.zip",
-    "hash": "7e97242bb79a945f20ebc749200f30b80865b725054b098d9c2dec3e09a98a3d",
-    "extract_dir": "kotlin-native-windows-1.4.21",
+    "suggest": {
+        "Kotlin": "kotlin"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/JetBrains/kotlin/releases/download/v1.6.20/kotlin-native-windows-x86_64-1.6.20.zip",
+            "hash": "376f5d66e4746f47987551d540d5bc956ed6e5f49faadd028c9dfd12cf7ccf63",
+            "extract_dir": "kotlin-native-windows-x86_64-1.6.20"
+        }
+    },
     "bin": [
         "bin\\cinterop.bat",
         "bin\\jsinterop.bat",
@@ -17,15 +24,20 @@
         "bin\\run_konan.bat"
     ],
     "env_add_path": "bin",
-    "suggest": {
-        "Kotlin": "kotlin"
-    },
     "checkver": {
-        "github": "https://github.com/JetBrains/kotlin",
-        "regex": "v(?<kv>[0-9.]+)/kotlin-native-windows-([0-9.]+).zip"
+        "url": "https://kotlinlang.org/docs/releases.html",
+        "regex": ">([\\d.]+)</b"
     },
     "autoupdate": {
-        "url": "https://github.com/JetBrains/kotlin/releases/download/v$matchKv/kotlin-native-windows-$version.zip",
-        "extract_dir": "kotlin-native-windows-$version"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/JetBrains/kotlin/releases/download/v$version/kotlin-native-windows-x86_64-$version.zip",
+                "extract_dir": "kotlin-native-windows-x86_64-$version"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/JetBrains/kotlin/releases/tag/v$version",
+            "regex": "(?sm)$basename</.*?>$sha256</"
+        }
     }
 }

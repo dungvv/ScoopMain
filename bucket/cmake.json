@@ -1,18 +1,18 @@
 {
-    "version": "3.19.1",
-    "description": "Open-source, cross-platform family of tools designed to build, test and package software",
+    "version": "3.23.0",
+    "description": "Family of tools designed to build, test and package software",
     "homepage": "https://cmake.org",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kitware/CMake/releases/download/v3.19.1/cmake-3.19.1-win64-x64.zip",
-            "hash": "e95d70549f306adb46e0f131dcecdbcbc6412d3a1e073c2c0078812391bf21d3",
-            "extract_dir": "cmake-3.19.1-win64-x64"
+            "url": "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-windows-x86_64.zip",
+            "hash": "aedbbd88bdd866dccf34280ba26b05e1bc930e26ddc2ebba50e3667cdf4594b8",
+            "extract_dir": "cmake-3.23.0-windows-x86_64"
         },
         "32bit": {
-            "url": "https://github.com/Kitware/CMake/releases/download/v3.19.1/cmake-3.19.1-win32-x86.zip",
-            "hash": "7c01b9cc29a0e5051c11c605b7dd43d187fb25b277e7a3dc4085b9eaf36a0387",
-            "extract_dir": "cmake-3.19.1-win32-x86"
+            "url": "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-windows-i386.zip",
+            "hash": "615a030f8cff0aa1895a8d08fe95a4ddef1b3291a33c192c4c991e9e39b71db0",
+            "extract_dir": "cmake-3.23.0-windows-i386"
         }
     },
     "bin": [
@@ -35,12 +35,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Kitware/CMake/releases/download/v$version/cmake-$version-win64-x64.zip",
-                "extract_dir": "cmake-$version-win64-x64"
+                "url": "https://github.com/Kitware/CMake/releases/download/v$version/cmake-$version-windows-x86_64.zip",
+                "extract_dir": "cmake-$version-windows-x86_64"
             },
             "32bit": {
-                "url": "https://github.com/Kitware/CMake/releases/download/v$version/cmake-$version-win32-x86.zip",
-                "extract_dir": "cmake-$version-win32-x86"
+                "url": "https://github.com/Kitware/CMake/releases/download/v$version/cmake-$version-windows-i386.zip",
+                "extract_dir": "cmake-$version-windows-i386"
             }
         },
         "hash": {

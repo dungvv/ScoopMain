@@ -1,16 +1,16 @@
 {
-    "version": "0.2.0",
+    "version": "0.8.1",
     "description": "Tool for defining application's build, deploy, and release lifecycle as code, reducing the time to deliver deployments through a consistent and repeatable workflow.",
     "homepage": "https://www.waypointproject.io",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://releases.hashicorp.com/waypoint/0.2.0/waypoint_0.2.0_windows_amd64.zip",
-            "hash": "465cf47b543569ab3e80d726b79f5d13586a0c014f2e886f696222e21e6e52da"
+            "url": "https://releases.hashicorp.com/waypoint/0.8.1/waypoint_0.8.1_windows_amd64.zip",
+            "hash": "3fd5b03d17df200dc717b0dafe31ad6dbd9e12244cd6faf2dfa97279a614954a"
         },
         "32bit": {
-            "url": "https://releases.hashicorp.com/waypoint/0.2.0/waypoint_0.2.0_windows_386.zip",
-            "hash": "0fb0b59b90191aa8d9fb717334a8d2ca32be54c2532a4dbaf55b92c92e9aa946"
+            "url": "https://releases.hashicorp.com/waypoint/0.8.1/waypoint_0.8.1_windows_386.zip",
+            "hash": "c4945d1c074eef0f4d9f83434c3a0bbe52b0e3d6dbb1c1d64018931f89f6a38e"
         }
     },
     "bin": "waypoint.exe",

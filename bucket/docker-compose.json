@@ -1,25 +1,26 @@
 {
-    "version": "1.27.4",
+    "version": "2.4.1",
     "description": "Define and run multi-container applications with Docker",
-    "homepage": "https://github.com/docker/compose",
+    "homepage": "https://docs.docker.com/compose/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-Windows-x86_64.exe#/docker-compose.exe",
-            "hash": "ad808a91fbf782bc8a306017df450c36e77edcbea139ef0d036642568622a326"
+            "url": "https://github.com/docker/compose/releases/download/v2.4.1/docker-compose-windows-x86_64.exe#/docker-compose.exe",
+            "hash": "e17afba38ae90f1e71d7d1261396003427d57247b38e3142c8f8af1cf5f4a582"
         }
     },
-    "bin": [
-        [
-            "docker-compose.exe",
-            "docker-compose"
-        ]
-    ],
-    "checkver": "github",
+    "bin": "docker-compose.exe",
+    "post_install": "echo 'Installing docker-compose as docker-cli plugin...'; New-Item -ItemType Directory -Force \"$Env:USERPROFILE/.docker/cli-plugins\" | Out-Null; Copy-Item \"$original_dir/docker-compose.exe\" \"$Env:USERPROFILE/.docker/cli-plugins/docker-compose.exe\"",
+    "uninstaller": {
+        "script": "Remove-Item -Force \"$Env:USERPROFILE/.docker/cli-plugins/docker-compose.exe\""
+    },
+    "checkver": {
+        "github": "https://github.com/docker/compose"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/docker/compose/releases/download/$version/docker-compose-Windows-x86_64.exe#/docker-compose.exe"
+                "url": "https://github.com/docker/compose/releases/download/v$version/docker-compose-windows-x86_64.exe#/docker-compose.exe"
             }
         },
         "hash": {

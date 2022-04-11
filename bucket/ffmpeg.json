@@ -1,30 +1,37 @@
 {
-    "version": "4.3.1-26",
+    "version": "5.0.1",
     "description": "A complete, cross-platform solution to record, convert and stream audio and video.",
     "homepage": "https://ffmpeg.org",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip",
-            "hash": "0c5c6290c6c3ab22f7a74fd3c0946df7a76fe08d8cab2f077af5e6115f311754",
-            "extract_dir": "ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3"
+            "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-5.0.1-full_build.7z",
+            "hash": "f62ec21b29871091e16505d53b909120260c7ddf50271d3ead944c04ffbb443b",
+            "extract_dir": "ffmpeg-5.0.1-full_build"
         }
     },
+    "post_install": [
+        "# Workaround for https://github.com/ScoopInstaller/Main/issues/2611",
+        "Remove-Item \"$scoopdir\\shims\\ffmpeg.ps1\", \"$scoopdir\\shims\\ffplay.ps1\", \"$scoopdir\\shims\\ffprobe.ps1\" -ErrorAction SilentlyContinue"
+    ],
+    "persist": "fonts",
     "bin": [
         "bin\\ffmpeg.exe",
         "bin\\ffplay.exe",
         "bin\\ffprobe.exe"
     ],
     "checkver": {
-        "github": "https://github.com/BtbN/FFmpeg-Builds",
-        "regex": "/autobuild-(?<time>[\\d-]+)/ffmpeg-n(?<version>[\\d.]+)-(?<commit>\\d+)-g(?<hash>[a-z\\d]+)-win64-gpl-[\\d.]+\\.zip",
-        "replace": "${version}-${commit}"
+        "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z.ver",
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-$matchTime/ffmpeg-n$version-g$matchHash-win64-gpl-$majorVersion.$minorVersion.zip",
-                "extract_dir": "ffmpeg-n$version-g$matchHash-win64-gpl-$majorVersion.$minorVersion"
+                "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-$version-full_build.7z",
+                "hash": {
+                    "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-$version-full_build.7z.sha256"
+                },
+                "extract_dir": "ffmpeg-$version-full_build"
             }
         }
     }

@@ -1,15 +1,21 @@
 {
-    "version": "1.10.19",
+    "version": "2.3.4",
     "description": "Dependency Manager for PHP",
     "homepage": "https://getcomposer.org/",
     "license": "MIT",
     "notes": "'composer selfupdate' is aliased to 'scoop update composer'",
-    "url": "https://getcomposer.org/download/1.10.19/composer.phar",
-    "hash": "688bf8f868643b420dded326614fcdf969572ac8ad7fbbb92c28a631157d39e8",
+    "suggest": {
+        "PHP": [
+            "php",
+            "php-nts"
+        ]
+    },
+    "url": "https://getcomposer.org/download/2.3.4/composer.phar",
+    "hash": "1fc8fc5b43f081fe76fa85eb5a213412e55f54a60bae4880bc96521ae482d6c3",
     "pre_install": [
         "@(",
         "    'if ($args.length -eq 1 -and ($args -eq \"selfupdate\" -or $args -eq \"self-update\")) { & scoop update composer }'",
-        "    'else { & php (Join-Path $psscriptroot \"composer.phar\") @args }'",
+        "    'else { & php (Join-Path $PSScriptRoot \"composer.phar\") @args }'",
         ") | Add-Content -Path \"$dir\\composer.ps1\"",
         "if (!(Test-Path \"$persist_dir\\home\") -and (Test-Path \"$env:Appdata\\Composer\")) {",
         "    Write-Host -F yellow \"Moving old 'COMPOSER_HOME' to '$persist_dir\\home'\"",
@@ -17,20 +23,12 @@
         "}"
     ],
     "bin": "composer.ps1",
+    "env_add_path": "home\\vendor\\bin",
     "env_set": {
         "COMPOSER_HOME": "$persist_dir\\home"
     },
-    "env_add_path": "home\\vendor\\bin",
     "persist": "home",
-    "suggest": {
-        "PHP": [
-            "php",
-            "php-nts"
-        ]
-    },
-    "checkver": {
-        "github": "https://github.com/composer/composer"
-    },
+    "checkver": "Latest: <strong>\\s*([\\d.]+)\\s*</strong>",
     "autoupdate": {
         "url": "https://getcomposer.org/download/$version/composer.phar",
         "hash": {

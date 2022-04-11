@@ -1,10 +1,10 @@
 {
-    "version": "6.0.4",
+    "version": "6.2.0",
     "description": "The scalable code generator that saves you time",
     "homepage": "https://www.hygen.io/",
     "license": "MIT",
-    "url": "https://github.com/jondot/hygen/releases/download/v6.0.4/hygen.win.exe.v6.0.4.zip",
-    "hash": "ed5b63ffb45a48f4166242e96f60e2d449e58a86e732308808e588da936a0518",
+    "url": "https://github.com/jondot/hygen/releases/download/v6.2.0/hygen.win.exe.v6.2.0.zip",
+    "hash": "078ed2db2023e72085832ed04812e26032e7e695c381b0baf87a545bfbb3f7c2",
     "bin": "hygen.exe",
     "checkver": {
         "github": "https://github.com/jondot/hygen"
