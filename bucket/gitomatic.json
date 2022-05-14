@@ -1,16 +1,16 @@
 {
-    "version": "0.2",
+    "version": "0.1.1",
     "description": "A tool to monitor git repositories and automatically pull & push changes.",
     "homepage": "https://github.com/muesli/gitomatic",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/muesli/gitomatic/releases/download/v0.2/gitomatic_0.2_Windows_x86_64.tar.gz",
-            "hash": "21fa09906fa38dd50267d541c53588110c0c9d7d7dfba62a386172a01a410e91"
+            "url": "https://github.com/muesli/gitomatic/releases/download/v0.1.1/gitomatic_0.1.1_Windows_x86_64.tar.gz",
+            "hash": "52bea12a2f87fed328635b7b27b4f833185c01bd7f45b418edd4509e1fcfcd9d"
         },
         "32bit": {
-            "url": "https://github.com/muesli/gitomatic/releases/download/v0.2/gitomatic_0.2_Windows_i386.tar.gz",
-            "hash": "7e52d14819cf2ac72f02120e04ba93276f7e7649ae95d13b24fa540557619e99"
+            "url": "https://github.com/muesli/gitomatic/releases/download/v0.1.1/gitomatic_0.1.1_Windows_i386.tar.gz",
+            "hash": "47d2d1884b1a419b7ad285b79b5e3362ad34e7d2d9c5f9798fc3025b6dca192c"
         }
     },
     "bin": "gitomatic.exe",
