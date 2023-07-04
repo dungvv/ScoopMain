@@ -1,12 +1,12 @@
 {
-    "version": "0.1.18",
+    "version": "0.1.19",
     "description": "An npm scripts runner written in Rust.",
     "homepage": "https://github.com/egoist/dum",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/egoist/dum/releases/download/v0.1.18/dum-x86_64-pc-windows-msvc.zip",
-            "hash": "a4daa7c455ac581c571a9c96c593ca6e6b8c9e7db6d924cbd7d470ed395b7cb6"
+            "url": "https://github.com/egoist/dum/releases/download/v0.1.19/dum-x86_64-pc-windows-msvc.zip",
+            "hash": "ed82ebf238d4812ac2753f9b970617b0a1c0945fd0f6d59bc22d71f81522468f"
         }
     },
     "bin": "dum.exe",
